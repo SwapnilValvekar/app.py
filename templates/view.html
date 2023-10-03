@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List</title>
+</head>
+<body style="background-color:yellow;">
+<marquee>
+<h3>Employee Information</h3>
+<table border=33>
+    <tr>
+        <th>ID</th>
+<th style="color: red;font-size:22px">Name</th
+        <th>Email</th>
+        <th>Address</th>
+    </tr>
+
+    {% for row in rows %}
+
+        <tr>
+            <td>{{row["id"]}}</td>
+            <td>{{row["name"]}}</td>
+            <td>{{row["email"]}}</td>
+            <td>{{row["address"]}}</td>
+        </tr>
+
+    {% endfor %}
+</table>
+    </marquee>
+<br><br>
+
+<a href="/">Go back to home page</a>
+</body>
+</html>
